@@ -1,0 +1,58 @@
+Note :
+
+Promises are :
+
+1. Readibility enhancers.
+2. They also solve problem of IOC
+
+* In JS, Promises are special types of objects that get returned immediately 
+when they are called.
+
+* Promise acts as a placeholder for the data that we hope to get back 
+sometime in future.
+
+* In these promise objects, we can attach the functionality we want to 
+execute once the future task is done.
+
+* Once the future task is done, promises will automatically execute the
+attached functionality.
+
+
+************ How to create a Promise? ***********
+
+* Creation of Promise is synchronous in nature. 
+
+They have below status :
+
+1. Pending : 
+
+-> When we create promise object then this is the default state. It 
+represents "WIP"
+  
+2. Fulfilled : 
+
+-> If the operation is completed successfully then the state property would
+be changed from "Pending" to "Fulfilled".
+
+3. Rejected :
+
+-> If the operation is not completed successfully then the state property would
+be changed from "Pending" to "Rejected".
+
+Creation of promise is done using "new" keyword. This Promise constructor takes a 
+callback function and this function takes 2 params (rresolve and reject).
+
+ E.g. :- new Promise(function fn(resolve, reject){
+
+  })
+
+  ** Note ** 
+   
+   1. In the above example, fn is also called as an executor function. Also,
+    resolve and reject are also called as functions.
+
+1. Whenever in the implementation of exector callback, you call resolve function
+   the promise goes to resolve state.
+2. Whenever in the implementation of exector callback, you call reject function, 
+   the promise goes to reject state.
+

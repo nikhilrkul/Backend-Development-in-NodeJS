@@ -1,0 +1,11 @@
+Note :
+
+1. At the time when the constructor generates new Promise object, it also generates pair of functions, 
+called as "resolve" & "reject"
+
+2. Generally, the exector function wraps some async/sync operations.
+
+3. The exector is called as synchronous in nature.
+
+4. At any point of time, if event loop has a choice to pick from microtask queue or callback queue then
+it always prefer to choose the functions present inside the microtask queue.
