@@ -10,7 +10,7 @@ function fun() {
 }
 
 // console.log(y); // throws error since we are trying to access variable which resides inside function scope
-// fun();  // undefined as y is accessed inside function fun
+// fun(); // undefined as y is accessed inside function fun
 
 function gun() {
   console.log(z);
