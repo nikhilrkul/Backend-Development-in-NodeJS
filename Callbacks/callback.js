@@ -2,7 +2,7 @@
  * fn -> HOF ? -> It takes fn (which is an function) as an argument
  *
  * x -> number
- * fn -> function
+ * fn -> function 
  */
 
 function fun(x, fn) {

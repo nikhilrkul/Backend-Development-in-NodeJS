@@ -14,6 +14,7 @@
 // //   console.log("I am an expression that is passed as an arguements to HOF");
 // // });
 
+
 // let arr = [1, 10, 9, 100, 1000, 11, 12, 13, 14, 2, 3]; // unsorted array
 
 // arr.sort(); // it sorts the given array // [expectation] -> this might arrange the elements in inc order

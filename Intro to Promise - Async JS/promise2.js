@@ -1,8 +1,8 @@
 function getRandomInt(max) {
-  return Math.floor(Math.random * max);
+  return Math.floor(Math.random() * max);
 }
 
-function createPromiseWithLoop() {
+function createPromiseWithTimer() {
   return new Promise(function executor(resolve, reject) {
     setTimeout(function () {
       let num = getRandomInt(10);
@@ -15,3 +15,6 @@ function createPromiseWithLoop() {
     }, 10000);
   });
 }
+
+let y = createPromiseWithTimer();
+console.log(y);
